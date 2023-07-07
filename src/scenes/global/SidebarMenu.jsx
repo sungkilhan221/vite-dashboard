@@ -25,7 +25,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
       active={selected === title}
       style={{
         color: colors.grey[100],
-        backgroundColor: selected === title && colors.primary[500],
+        backgroundcolor: selected === title && colors.primary[500],
         "&:hover": {
           color: colors.grey[500],
         },
@@ -52,7 +52,7 @@ const SidebarMenu = () => {
           background: `${colors.primary[400]} !important`,
         },
         "& .pro-icon-wrapper": {
-          backgroundColor: "transparent !important",
+          backgroundcolor: "transparent !important",
         },
         "& .pro-inner-item": {
           padding: "5px 35px 5px 20px !important",
@@ -65,7 +65,7 @@ const SidebarMenu = () => {
         },
       }}
     >
-      <ProSidebar collapsed={isCollapsed} backgroundColor={colors.primary[400]}>
+      <ProSidebar collapsed={isCollapsed} backgroundcolor={colors.primary[400]}>
         <Menu iconShape="square">
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
